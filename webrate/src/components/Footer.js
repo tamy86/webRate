@@ -2,6 +2,8 @@ import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
+import { Button } from '@material-ui/core';
+
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -9,26 +11,21 @@ const useStyles = makeStyles(theme => ({
     float:'right',
    width:'100%',
     height:'100%',
-    position:"fixed",
-    marginBottom:0,
-    
-    
-      },
-
-  paperfooter: {
-    padding: theme.spacing(1),
-    textAlign: 'right',
-    height:'10%',
-    width:'100%',
-    bottom:0,
-    color: theme.palette.text.secondary,
-    background:'linear-gradient(45deg, #06ACF9 30%, #70C6EE 90%)',
-    borderRadius:'0px',
-    position:"fixed",
-    right:0,
-    marginBottom:0,
+    bottom:'0px',
+    position:'sticky',
+    marginRight:0,
+    marginLeft:0,
     
    
+    
+ },
+
+  paperfooter: {
+    padding: theme.spacing(3),
+    height:'80px',
+     bottom:0,
+     position:'sticky',
+      background: 'linear-gradient(45deg, #85929E 30%, #70C6EE 90%)',
       
   },
 }));
@@ -40,7 +37,9 @@ export default function FooterGrid() {
     <div className={classes.root} >
       <Grid container spacing={3} >
         <Grid item xs={12}>
-          <Paper className={classes.paperfooter}>xs=تست</Paper>
+          <Paper className={classes.paperfooter}>
+       
+          </Paper>
         </Grid>
        </Grid>
     </div>

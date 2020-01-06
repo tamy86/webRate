@@ -7,7 +7,9 @@ import ButtonGroup from '@material-ui/core/ButtonGroup';
 import LockOpenIcon from '@material-ui/icons/LockOpen';
 import PeopleOutlineIcon from '@material-ui/icons/PeopleOutline';
 import SideMenu from './Sidemenu';
+import Context from './Context';
 import 'c:/Users/tahmoores19/Documents/GitHub/my-app1/webRate/webrate/src/components/App.css';
+import { Grid } from '@material-ui/core';
 
 
 const useStyles = makeStyles(theme => ({
@@ -16,41 +18,29 @@ const useStyles = makeStyles(theme => ({
     float:'right',
     width:'100%',
     height:'100%',
-    scrollBehavior:'auto',
     fontFamily:'Verdana, Geneva, Tahoma, sans-serif',
+    position:'sticky',
+    
+   
     
   },
-  button: {
-    margin: theme.spacing(1),
-    float:'right',
-    fontFamily:'Verdana, Geneva, Tahoma, sans-serif',
-  },
-}));
 
-function Headerbutton(){
-  const classesbutton = useStyles();
-  return(
-  <div className={classesbutton.button}>
-  <ButtonGroup  size="large" variant="outlined" color="defulalt" fontFamily="Verdana, Geneva, Tahoma, sans-serif" >
-        
-        <Button id="fontbuttonheader">ثبت نام <PeopleOutlineIcon/></Button>
-        <Button id="fontbuttonheader">ورود <LockOpenIcon/></Button>
-      </ButtonGroup>
-      </div>
-      );
-}
+}));
 
 function App() {
   const classes = useStyles();
 
   return (
     <div className={classes.root}>
-    <HeaderGrid/>
-    
-    <FooterGrid/>
-    <Headerbutton/>
-    <SideMenu/>
+<div><HeaderGrid/></div>
+       <div><SideMenu/></div>
+       <div ><Context/></div>
+        
+ <div><FooterGrid/></div>
     </div>
+    
+   
+    
   );
 }
 

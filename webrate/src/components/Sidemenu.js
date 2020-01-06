@@ -22,13 +22,16 @@ import './components.css'
 
 const useStyles = makeStyles({
   root: {
-    width: 230,
+    width:'230px',
     background:'#E5E7E9',
     float:'right',
-    marginTop:'70px',
+    marginTop:'90px',
+    marginRight:'100px',
     position:'fixed',
     right:10,
     direction:'rtl',
+marginBottom:'10px',
+borderRadius:'20px',    
   },
   MenuItem:{
       marginTop:10,
