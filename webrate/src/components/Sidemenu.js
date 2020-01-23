@@ -26,7 +26,7 @@ const useStyles = makeStyles({
     background:'#E5E7E9',
     float:'right',
     marginTop:'90px',
-    marginRight:'100px',
+    marginRight:'20px',
     position:'fixed',
     right:10,
     direction:'rtl',

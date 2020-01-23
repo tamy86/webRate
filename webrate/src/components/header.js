@@ -4,6 +4,7 @@ import Paper from '@material-ui/core/Paper';
 import Grid from '@material-ui/core/Grid';
 import { Button } from '@material-ui/core';
 import ButtonGroup from '@material-ui/core/ButtonGroup';
+import Context from './Context';
 
 const useStyles = makeStyles(theme => ({
   root: {
@@ -46,7 +47,7 @@ export default function HeaderGrid() {
         <Grid item xs={12}>
           <Paper className={classes.paperheader}>
             <ButtonGroup size="large" className={classes.button}>
-            <Button style={{fontFamily:'Verdana, Geneva, Tahoma, sans-serif'}}>ورود</Button>
+            <Button onClick={()=><Context/>} style={{fontFamily:'Verdana, Geneva, Tahoma, sans-serif'}}>ورود</Button>
               <Button style={{fontFamily:'Verdana, Geneva, Tahoma, sans-serif'}}>ثبت نام</Button>
              
             </ButtonGroup>
